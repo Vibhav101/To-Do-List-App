@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <title>To Do</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>    
+    <a href="help.html">
+        <button class="click"></button>
+    </a>
+    <div class="main">
+        <div class="base" style="margin-right: 0;">
+            <p class="mainHeader">This Day</p>
+            <div class="addTask">
+                <input type="text" id="input1" class="taskInput" placeholder="Add your task"/>
+                <input type="text" id="time1" class="timeInput" placeholder="Complete by"/>
+            </div>
+            <ul id="list1"></ul>
+        </div>
+        <div class="base" style="margin-right: 0;">
+            <p class="mainHeader">This Week</p>
+            <div class="addTask">
+                <input type="text" id="input2" class="taskInput" placeholder="Add your task"/>
+                <input type="text" id="time2" class="timeInput" placeholder="Complete by"/>
+            </div>
+            <ul id="list2"></ul>
+        </div>
+        <div class="base">
+            <p class="mainHeader">This Month</p>
+            <div class="addTask">
+                <input type="text" id="input3" class="taskInput" placeholder="Add your task"/>
+                <input type="text" id="time3" class="timeInput" placeholder="Complete by"/>
+            </div>
+            <ul id="list3"></ul>
+        </div>
+    </div>
+    <script src="day.js"></script>
+    <script src="week.js"></script>
+    <script src="month.js"></script>
+</body>
+</html>

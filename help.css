@@ -1,0 +1,96 @@
+:root{
+    --gradient: linear-gradient(
+        45deg,
+        #eb418a,
+        #9630f5,
+        #ffa365,
+        #6530bd
+    );
+}
+
+body{
+    background-image: var(--gradient);
+    background-size: 300%;
+    animation: moveGradient 20s infinite alternate;
+}
+
+@keyframes moveGradient {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+.back {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    height: 55px;
+    width: 55px;
+    border: none;
+    background-image: url("./back.png");
+    background-color: rgba(255, 255, 255, 0);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    padding: 10px;
+    opacity: 60%;
+}
+
+.back:hover{
+    opacity: 100%;
+}
+
+.main{
+    height: 97.6vh;
+    display: flex;
+    user-select: none;
+}
+
+.base{
+    background-color: rgba(58, 58, 58, 0.3);
+    margin: auto;
+    width: 60%;
+    border-radius: 40px;
+    border: none;
+    user-select: none;
+}
+
+.mainHeader{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 10px #000000;
+    font-size: 50px;
+    user-select: none;
+}
+
+.intro{
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: rgb(218, 218, 218);
+    font-family: Calibri;
+    font-size: 20px;
+    user-select: none;
+}
+
+hr {
+    border: none;
+    height: 4px;
+    background-color: rgba(58, 58, 58, 0.25);
+}
+
+.top{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ul li{
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: rgb(218, 218, 218);
+    font-family: Calibri;
+    font-size: 20px;
+    user-select: none;
+}
